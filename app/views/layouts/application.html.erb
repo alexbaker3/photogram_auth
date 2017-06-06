@@ -44,17 +44,16 @@
           <li><a href="/likes">Likes</a></li>
           <li><a href="/photos">Photos</a></li>
           <li><a href="/users">Users</a></li>
-          <li><a href="/rails/info">Sitemap</a></li>
-          <li><a href="/my_likes/"><i class="fa fa-fw fa-heart"></i>
-              <span class="hidden-sm">
-                My Likes
-              </span></a></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
           <% if current_user != nil %>
           <li><a href="/users/edit"><%= current_user.email%></a></li>
           <li><a href="/users/sign_out" data-method="delete" rel="nofollow"><i class="fa fa-sign-out" aria-hidden="true"></i>Sign Out</a></li>
+          <li><a href="/my_likes/"><i class="fa fa-fw fa-heart"></i>
+              <span class="hidden-sm">
+                My_Likes
+              </span></a></li>
           <% else %>
           <li><a href="/users/sign_up">Sign Up</a></li>
           <li><a href="/users/sign_in">Sign In</a></li>

@@ -8,7 +8,7 @@ end
 
 def show
   @user = User.find(params[:id])
-
+  @photo = Photo.new 
   render("users/show.html.erb")
 end
 end

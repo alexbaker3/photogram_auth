@@ -67,7 +67,7 @@ class LikesController < ApplicationController
 
   def mylikes
     @likes = Like.all
-
+    @photo = Photo.new
     render("my_likes.html.erb")
   end
 end
